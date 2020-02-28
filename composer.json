@@ -1,5 +1,5 @@
 {
-    "name": "ikadoc/kcfinder-bundle",
+    "name": "mylittleparis/kcfinder-bundle-v2",
     "type": "symfony-bundle",
     "description": "Provides a KCFinder integration for CKEditor for your Symfony Project.",
     "keywords": [ "ckeditor", "kcfinder" ],
