@@ -44,7 +44,9 @@ class ProxyController extends Controller
 		$_SERVER['SCRIPT_FILENAME'] = $previousscriptFileName;
 		chdir($previousCwd);
 
-		ob_end_flush();
+		if (ob_get_length()){
+			ob_end_flush();
+		}
 
 		return new Response();
 	}
