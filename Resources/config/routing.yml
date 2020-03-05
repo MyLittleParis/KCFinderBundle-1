@@ -1,4 +1,16 @@
 KCFinder_browse:
+    path:  /kcfinder/browse.php
+    defaults:
+        _controller: "IkadocKCFinderBundle:Proxy:proxy"
+        file: browse.php
+
+KCFinder_upload:
+    path:  /kcfinder/upload.php
+    defaults:
+        _controller: "IkadocKCFinderBundle:Proxy:proxy"
+        file: upload.php
+
+KCFinder_route:
     path:  /kcfinder/{file}
     defaults:
         _controller: "IkadocKCFinderBundle:Proxy:proxy"
