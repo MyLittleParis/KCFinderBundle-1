@@ -4,7 +4,7 @@ The bundle provides a [KCFinder](http://kcfinder.sunhater.com/) for [CKEditor](h
 
 ## Migration from KCFinderBundle
 
-You're probably coming here because you updated to `mylittleparis/sonata-bundle` [v3.1](https://github.com/MyLittleParis/SonataBundle/releases/tag/3.1) or [v4.1](https://github.com/MyLittleParis/SonataBundle/releases/tag/4.1).
+You're probably coming here because you updated `mylittleparis/sonata-bundle` to [v3.1](https://github.com/MyLittleParis/SonataBundle/releases/tag/3.1) or [v4.1](https://github.com/MyLittleParis/SonataBundle/releases/tag/4.1).
 When migrating from KCFinderBundle, you need to change `config.yml`, `routing.yml` and `AppKernel.php`.
 
 Example:
