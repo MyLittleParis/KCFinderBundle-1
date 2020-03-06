@@ -6,20 +6,6 @@ The bundle provides a [KCFinder](http://kcfinder.sunhater.com/) for [CKEditor](h
 
 ### Installation
 
-This package require [kcfinder] but the composer can't load it if it's on require so add it manualy to you composer.json file:
-
-``` php
-// composer.json
-"sunhater/kcfinder": "dev-master"
-```
-
-        
-Require the bundle in your composer.json file:
-
-```
-$ composer require ikadoc/kcfinder-bundle --no-update
-```
-
 Register the bundle:
 
 ``` php
