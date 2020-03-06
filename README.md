@@ -2,6 +2,14 @@
 
 The bundle provides a [KCFinder](http://kcfinder.sunhater.com/) for [CKEditor](http://ckeditor.com/) integration for your Symfony Project
 
+## Migration from KCFinderBundle
+
+You're probably coming here because you updated to `mylittleparis/sonata-bundle` [v3.1](https://github.com/MyLittleParis/SonataBundle/releases/tag/3.1) or [v4.1](https://github.com/MyLittleParis/SonataBundle/releases/tag/4.1).
+When migrating from KCFinderBundle, you need to change `config.yml`, `routing.yml` and `AppKernel.php`.
+
+Example:
+https://github.com/MyLittleParis/my-little-paris/pull/1402/files
+
 ## Documentation
 
 ### Installation
@@ -23,7 +31,7 @@ public function registerBundles()
 Install the bundle:
 
 ```
-$ composer update ikadoc/kcfinder-bundle
+$ composer require mylittleparis/kcfinder-bundle-v2
 ```
 
 Add routing:
@@ -47,17 +55,8 @@ ikadoc_kc_finder:
     config:
         disabled : false
         uploadURL: "/uploads/"
-        uploadDir: "%kernel.root_dir%/../web/uploads/"
+        uploadDir: "%kernel.project_dir%/web/uploads/"
 ```
-
-
-## Migration from KCFinderBundle
-
-You're probably coming here because you updated to `mylittleparis/sonata-bundle` [v3.1](https://github.com/MyLittleParis/SonataBundle/releases/tag/3.1) or [v4.1](https://github.com/MyLittleParis/SonataBundle/releases/tag/4.1).
-When migrating from KCFinderBundle, you need to change `config.yml`, `routing.yml` and `AppKernel.php`.
-
-Example:
-https://github.com/MyLittleParis/my-little-paris/pull/1402/files
 
 
 ## License
