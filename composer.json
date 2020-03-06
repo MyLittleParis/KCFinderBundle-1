@@ -12,6 +12,7 @@
     ],
     "require": {
         "php": ">=5.3.3",
+        "mylittleparis/kcfinder": "^3.0",
         "symfony/dependency-injection": "~2.2|~3.0",
         "symfony/framework-bundle": "~2.2|~3.0"
     },

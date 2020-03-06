@@ -65,6 +65,14 @@ ikadoc_kc_finder:
 ```
 
 
+## Migration from KCFinderBundle
+
+When migrating from KCFinderBundle, probably by upgrading to `mylittleparis/sonata-bundle` [v3.1](https://github.com/MyLittleParis/SonataBundle/releases/tag/3.1) or [v4.1](https://github.com/MyLittleParis/SonataBundle/releases/tag/4.1), you need to change `config.yml` and `AppKernel.php`.
+
+Example:
+https://github.com/MyLittleParis/my-little-paris/pull/1402/files
+
+
 ## License
 
 The Ikadoc KCFinder Bundle is under the MIT license. For the full copyright and license information, please read the
