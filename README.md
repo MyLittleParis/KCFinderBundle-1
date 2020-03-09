@@ -2,23 +2,17 @@
 
 The bundle provides a [KCFinder](http://kcfinder.sunhater.com/) for [CKEditor](http://ckeditor.com/) integration for your Symfony Project
 
+## Migration from KCFinderBundle
+
+You're probably coming here because you updated `mylittleparis/sonata-bundle` to [v3.1](https://github.com/MyLittleParis/SonataBundle/releases/tag/3.1) or [v4.1](https://github.com/MyLittleParis/SonataBundle/releases/tag/4.1).
+When migrating from KCFinderBundle, you need to change `config.yml`, `routing.yml` and `AppKernel.php`.
+
+Example:
+https://github.com/MyLittleParis/my-little-paris/pull/1402/files
+
 ## Documentation
 
 ### Installation
-
-This package require [kcfinder] but the composer can't load it if it's on require so add it manualy to you composer.json file:
-
-``` php
-// composer.json
-"sunhater/kcfinder": "dev-master"
-```
-
-        
-Require the bundle in your composer.json file:
-
-```
-$ composer require ikadoc/kcfinder-bundle --no-update
-```
 
 Register the bundle:
 
@@ -37,10 +31,10 @@ public function registerBundles()
 Install the bundle:
 
 ```
-$ composer update ikadoc/kcfinder-bundle
+$ composer require mylittleparis/kcfinder-bundle-v2
 ```
 
-Add routing:
+Add routing, and ⚠️ be careful ⚠️ about your admin prefix
 
 ```
 // app/config/routing.yml
@@ -52,25 +46,16 @@ kcfinder:
 
 ### Configuration
 
-The bundle allow to change base_path to kcfinder folder and you can define as many configs you want. The list of all config options are available
-[here](http://kcfinder.sunhater.com/install).
+The bundle allow to change base_path to kcfinder folder and you can define as many configs you want.
 
 ``` yaml
 ikadoc_kc_finder:
-    base_path : "%kernel.root_dir%/../vendor/sunhater/kcfinder"
+    base_path : "%kernel.root_dir%/../vendor/mylittleparis/kcfinder"
     config:
         disabled : false
         uploadURL: "/uploads/"
-        uploadDir: "%kernel.root_dir%/../web/uploads/"
+        uploadDir: "%kernel.project_dir%/web/uploads/"
 ```
-
-
-## Migration from KCFinderBundle
-
-When migrating from KCFinderBundle, probably by upgrading to `mylittleparis/sonata-bundle` [v3.1](https://github.com/MyLittleParis/SonataBundle/releases/tag/3.1) or [v4.1](https://github.com/MyLittleParis/SonataBundle/releases/tag/4.1), you need to change `config.yml` and `AppKernel.php`.
-
-Example:
-https://github.com/MyLittleParis/my-little-paris/pull/1402/files
 
 
 ## License
