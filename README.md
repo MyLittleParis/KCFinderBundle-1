@@ -46,12 +46,11 @@ kcfinder:
 
 ### Configuration
 
-The bundle allow to change base_path to kcfinder folder and you can define as many configs you want. The list of all config options are available
-[here](http://kcfinder.sunhater.com/install).
+The bundle allow to change base_path to kcfinder folder and you can define as many configs you want.
 
 ``` yaml
 ikadoc_kc_finder:
-    base_path : "%kernel.root_dir%/../vendor/sunhater/kcfinder"
+    base_path : "%kernel.root_dir%/../vendor/mylittleparis/kcfinder"
     config:
         disabled : false
         uploadURL: "/uploads/"
