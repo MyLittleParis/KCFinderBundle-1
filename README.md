@@ -34,7 +34,7 @@ Install the bundle:
 $ composer require mylittleparis/kcfinder-bundle-v2
 ```
 
-Add routing:
+Add routing, and ⚠️ be careful ⚠️ about your admin prefix
 
 ```
 // app/config/routing.yml
